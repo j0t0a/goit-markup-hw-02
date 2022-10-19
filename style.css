@@ -194,7 +194,7 @@ body{
     padding-bottom: 10px;
 }
 .main{
-    width: calc(100vw - 330px);
+    width: calc(100vw - 430px);
     margin: 100px auto;
 }
 .filters{
