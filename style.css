@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    width: 1600px;
 }
 .header{
     display: flex;
@@ -8,7 +7,8 @@ body{
     justify-content:center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    padding-top: 20px;
+    padding: 20px 0;
+    border-bottom: 2px solid #ECECEC;
 }
 .web-studio{
     text-decoration: none;
@@ -57,6 +57,7 @@ body{
     text-align: center
 }
 .order-h1{
+    margin-top: 0;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -191,4 +192,40 @@ body{
 }
 .space{
     padding-bottom: 10px;
+}
+.main{
+    width: calc(100vw - 330px);
+    margin: 100px auto;
+}
+.filters{
+    text-align: center;
+}
+.filter-button{
+    height: 38px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border:none;
+    padding: 0 22px;
+    margin: 0 4px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+.filter-button-active{
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+.allimages{
+    width: 370px;
+    border: 1px solid #EEEEEE;
+    margin-top: 30px;
+}
+.imagesforfilters{
+    display: flex;
+}
+.allimages:not(:last-child){
+    margin-right: 30px;
 }
