@@ -1,24 +1,31 @@
 body{
     margin: 0;
+    --header-border-color:#ECECEC;
+    --blue-color:#2196F3;
+    --black:#010101; 
+    --dark-grey:#2F303A;
+    --white:#FEFEFE;
+    --grey:#757575;
+    --dark-white:#F5F4FA;
 }
 .header{
     display: flex;
     height: 30px;
     justify-content:center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 20px 0;
-    border-bottom: 2px solid #ECECEC;
+    border-bottom: 2px solid var(--header-border-color);
 }
 .web-studio{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     font-weight: 700;
     font-size: 26px;
     font-family: 'Raleway', sans-serif;
 }
 .web-studio .web{
-    color: #2196F3;
+    color: var(--blue-color);
 }
 .navigation{
     margin-left: 80px;
@@ -31,26 +38,26 @@ body{
 }
 .navpoint{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     font-size: 14px;
     font-weight: 500;
 }
 .navpoint:hover{
-    color:#2196F3;
+    color: var(--blue-color);
 }
 .header-contact{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     font-size: 14px;
     font-weight: 500;
     margin: 0 30px;
 }
 .header-contact:hover{
-    color:#2196F3;
+    color: var(--blue-color);
 }
 
 .order{
-    background-color: #2F303A;
+    background-color: var(--dark-grey);
     height: 600px;
     width: 696px;
     padding: 0 calc(50vw - 356px);
@@ -58,7 +65,7 @@ body{
 }
 .order-h1{
     margin-top: 0;
-    color: white;
+    color: var(--white);
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 44px;
@@ -67,7 +74,7 @@ body{
     letter-spacing: 0.06em;
 }
 .order-button{
-    background: #2196F3;
+    background: var(--blue-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -75,9 +82,10 @@ body{
     height: 50px;
     font-family: 'Roboto';
     font-weight: 700;
-    color: white;
+    color: var(--white);
     font-size: 16px;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .part2{
@@ -94,14 +102,14 @@ body{
     font-family: 'Roboto';
     font-weight: 400;
     margin-right: 30px;
-    color: #757575;
+    color: var(--grey);
     letter-spacing: 0.03em;
 }
 .atext2{
     margin-right: 0;
 }
 .h3{
-    color: black;
+    color: var(--black);
     font-weight: 700;
 }
 .h2{
@@ -124,8 +132,9 @@ body{
 }
 
 .part3{
-    width: 1645px;
-    background-color: #F5F4FA;
+    width: 99vw;
+    justify-content: center;
+    background-color: var(--dark-white);
     padding-bottom: 94px;
 }
 .people{
@@ -134,7 +143,7 @@ body{
 }
 .person{
     height: 368px;
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -154,24 +163,24 @@ body{
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey);
 }
 .footer{
-    background-color: #2F303A;
+    background-color: var(--dark-grey);
     height: 252px;
-    width: 1645px;
-    align-items: center;
+    width: 99vw;
+    justify-content: left;
 }
 .web-studio2{
     padding-left: 37px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-weight: 700;
     font-size: 26px;
     font-family: 'Raleway', sans-serif;
 }
 .web-studio2 .web2{
-    color: #2196F3;
+    color: var(--blue-color);
 }
 .info{
     padding-left: 200px;
@@ -202,7 +211,7 @@ body{
 }
 .filter-button{
     height: 38px;
-    background: #F5F4FA;
+    background: var(--dark-white);
     border-radius: 4px;
     border:none;
     padding: 0 22px;
@@ -211,16 +220,17 @@ body{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
 .filter-button-active{
-    background: #2196F3;
+    background: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .allimages{
     width: 370px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--dark-white);
     margin-top: 30px;
 }
 .imagesforfilters{
