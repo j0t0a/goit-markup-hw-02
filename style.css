@@ -1,4 +1,4 @@
-body{
+:root{
     margin: 0;
     --header-border-color:#ECECEC;
     --blue-color:#2196F3;
@@ -8,12 +8,16 @@ body{
     --grey:#757575;
     --dark-white:#F5F4FA;
 }
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
 .header{
     display: flex;
     height: 30px;
     justify-content:center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     padding: 20px 0;
     border-bottom: 2px solid var(--header-border-color);
 }
@@ -47,7 +51,7 @@ body{
 }
 .header-contact{
     text-decoration: none;
-    color: var(--black);
+    color: var(--grey);
     font-size: 14px;
     font-weight: 500;
     margin: 0 30px;
@@ -66,12 +70,13 @@ body{
 .order-h1{
     margin-top: 0;
     color: var(--white);
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 900;
     font-size: 44px;
     text-align: center;
     padding-top: 200px;
     letter-spacing: 0.06em;
+    line-height: 60px;
 }
 .order-button{
     background: var(--blue-color);
@@ -80,12 +85,13 @@ body{
     border: none;
     width: 216px;
     height: 50px;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     color: var(--white);
     font-size: 16px;
     letter-spacing: 0.06em;
     cursor: pointer;
+    line-height: 30px;
 }
 
 .part2{
@@ -99,11 +105,12 @@ body{
 .atext{
     width: 270px;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 400;
     margin-right: 30px;
     color: var(--grey);
     letter-spacing: 0.03em;
+    line-height: 24px;
 }
 .atext2{
     margin-right: 0;
@@ -111,9 +118,10 @@ body{
 .h3{
     color: var(--black);
     font-weight: 700;
+    line-height: 16px;
 }
 .h2{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -151,14 +159,14 @@ body{
     margin-right: 30px;
 }
 .name{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
 }
 .position{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -193,21 +201,35 @@ body{
 .point-footer{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
 }
+.point-footer-white{
+    color: var(--white);
+}
+.point-footer:hover{
+    color: var(--blue-color);
+}
+.point-footer-white:hover{
+    color: var(--blue-color);
+}
+/* .footer-info:first-child{
+    color: var(--white);
+} */
 .space{
     padding-bottom: 10px;
 }
-.main{
-    width: calc(100vw - 430px);
+.portfolio{
+    width: calc(100vw - 250px);
     margin: 100px auto;
 }
 .filters{
-    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 .filter-button{
     height: 38px;
@@ -216,13 +238,13 @@ body{
     border:none;
     padding: 0 22px;
     margin: 0 4px;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
     cursor: pointer;
 }
-.filter-button-active{
+.filter-button:hover{
     background: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -231,12 +253,13 @@ body{
 .allimages{
     width: 370px;
     border: 1px solid var(--dark-white);
+    margin: 0 15px;
     margin-top: 30px;
+    list-style: none;
 }
 .imagesforfilters{
     justify-content: center;
     display: flex;
-}
-.allimages:not(:last-child){
-    margin-right: 30px;
+    flex-wrap:  wrap;
+    margin-top: 30px;
 }
